@@ -1,139 +1,155 @@
- header,footer {
-    background-color: #70BEBC;
-}
-h1, h3 {
-    text-align: center;
-}
+/* Body and Global Styles */
 body {
     background-color: #F8F4DE;
 }
-header li {
-    list-style: none; 
-    margin: 15px;
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Merriweather';
 }
-header li a {
-    text-decoration: none; 
-    font-size: 24px; 
-    color: black; 
+
+h1 {
+    font-size: 36px; 
 }
-i {
-    font-size:36px;
+
+h3 {
+    font-size: 24px;
 }
+
+p {
+    font-size: 19px;
+    font-family: 'Cardo';
+    padding: 25px;
+    line-height: 150%;
+    max-width: 90ch;
+}
+
+/* Header Styles */
+header {
+    background-color: #70BEBC;
+}
+
+header h1 {
+    font-size: 36px;
+    padding: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #70BEBC;
+}
+
 footer a {
     text-decoration: none; 
     color: inherit; 
-    margin-right: 20px;
-    font-size: 24px;
+    font-size: 32px;
+    margin: 15px
 }
+
 footer h1 {
     margin-right: 20px;
 }
+
+footer a:hover, footer a:hover i {
+    transform: scale(1.1); 
+    text-decoration: none;
+    display: inline-block; 
+    transition: background-color 0.3s;
+    color: #C81E40;
+}
+
+/* Specific Sections Styles */
 .portfolio_purpose,
 .my_journey,
 .my_skills,
 .projects {
     width: 50%; 
 }
-.my_journey h1, .my_skills h1 {
-    text-align: center;
-}
-.my_skills p {
-    text-align: left;
-}
-.projects p, .projects h1, .projects h3 {
-    text-align: center;
-}
-.portfolio_purpose_paragraph {
-    padding: 30px;
-}
-.project_description {
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-footer a:hover i {
-    color: #017bff; 
-    transform: scale(1.1); 
-}
 
-.portfolio_purpose_paragraph {
-    border: 2px solid black;
-
-}
-.my_skills h3 {
-    text-align: left;
-}
-h1 {
-    text-align: center; 
-    font-family: 'Merriweather';
-    font-size: 36px; 
-}
-header h1 {
-    font-size: 24px;
-}
-h3 {
-    font-family: 'Merriweather';
-}
-p {
-    font-size: 16px;
-    font-family: 'Roboto';
-    padding: 15px;
-}
-.my-divider {
-        height: 5px;         
-        background-color: black; 
-        margin-top: 20px;
-        margin-bottom: 20px; 
-}
-footer a {
-    margin-left: 50px;
-}
-footer a:hover {
-    text-decoration: none;
-    color: #C81E40; 
-    display: inline-block; 
-    transition: background-color 0.3s;
-}
-.project h3, .project h4{
-    color: #333;
-}
-
-.project p {
-    margin-bottom: 10px;
-}
-
-.project ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
 .projects {
     display: flex; 
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
+.my_journey h1, 
+.my_skills h1 {
+    text-align: center;
+}
+
+.my_skills p, 
+.my_skills h3 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.projects p, 
+.projects h1, 
+.projects h3 {
+    text-align: left;
+}
+
+.portfolio_purpose_paragraph,
+.project_description {
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.my-divider {
+    height: 5px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Project Style */
+.project, .my_skills {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%; 
+}
+
+.project h3, .project h4{
+    color: #333;
+    text-align: left;
+}
+
+.project p {
+    margin-bottom: 5px;
+}
+
+.project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Button Styles */
 .button {
     padding: 10px 20px;
     margin-top: 20px;
-    font-size: 16px;
     margin-left: 50px;
+    font-size: 16px;
     color: #fff;
-    background-color: #007bff;
+    background-color: #E22728;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     width: 25%; 
 }
+
+.button:hover {
+    background-color: #be1616;
+}
+
+/* Iframe Styles */
 iframe {
     width: 50%; 
     height: auto; 
     min-height: 1050px;    
     border: none; 
-}
-.button:hover {
-    background-color: #0056b3;
 }
 
 
