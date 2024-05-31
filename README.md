@@ -1,1 +1,1 @@
-Link: https://www.harrisonholt.dev/index.html
+This is my 1st project in my web development portfolio. This is a webpage using just HTML/CSS using a little bootstrap. This page shows a brief about me section and a description of all of my projects in my portfolio with links to them. Link: https://www.harrisonholt.dev/index.html
