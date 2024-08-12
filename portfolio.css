@@ -29,6 +29,7 @@ header {
     background-color: #70BEBC;
     top: 0; 
     position: sticky;
+    z-index: 1000;
 }
 header a {
     text-decoration: none; 
