@@ -24,13 +24,6 @@ p {
     max-width: 90ch;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    max-height: 600px; /* Adjust this as necessary */
-}
 
 
 /* Header Styles */
@@ -38,7 +31,7 @@ header {
     background-color: #70BEBC;
     top: 0; 
     position: sticky;
-    z-index: 9999;
+    z-index: 10000;
 }
 header a {
     text-decoration: none; 
@@ -195,16 +188,10 @@ footer a:hover, footer a:hover i {
 
 /* Iframe Styles */
 iframe {
-    width: 100%;
-    max-width: 1250px;
-    height: 1000px;
+    width: 50%;
+    height: auto;
     border: none;
 }
-
-   .content {
-            height: 1500px; /* Ensure there's enough content to scroll */
-            padding: 20px;
-        }
 
 
 
