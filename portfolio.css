@@ -27,6 +27,7 @@ p {
 /* Header Styles */
 header {
     background-color: #70BEBC;
+    position: sticky;
 }
 header a {
     text-decoration: none; 
