@@ -20,7 +20,6 @@ This page serves as the home page for my portfolio website.
     <body class="d-flex flex-column vh-100">
         <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
             <h1 class="m-0">Harrison Holt</h1>
-            <a href="project_desc.html">View Projects</a>
         </header>
 
 
@@ -91,61 +90,83 @@ This page serves as the home page for my portfolio website.
 
                 <iframe src="Resume.pdf" id="Resume" aria-label="Resume PDF"><p>Your browser does not support iframes. Please <a href="Resume.pdf" target="_blank">click here</a> to download the resume.</p></iframe>
             </div>
-
+            
             <hr class="my-divider">
-            <!--The third row-->
 
-            <div class="third_row d-flex flex-row justify-content-around">
+            <!--The third row-->
+            <div class="third_row">
+                <h1>My Skills</h1>
                 <section class="my_skills">
-                    <h1>My Skills</h1>
+                    <div class="d-flex flex-column">
                         <h3>Current Languages:</h3>
                         <p>
-                        C++<br>
-                        C<br>
-                        Python<br>
-                        Java<br>
-                        JavaScript<br>
-                        PHP<br>
-                        HTML/CSS<br>
-                        MySQL<br>
-                        <br></p>
-
-\
+                            C++<br>
+                            C<br>
+                            Python<br>
+                            Java<br>
+                            JavaScript<br>
+                            PHP<br>
+                            HTML/CSS<br>
+                            MySQL<br>
+                        </p>
+                    </div>
+            
+                    <div class="d-flex flex-column">
                         <h3>Current Software:</h3>
                         <p>
-                        Trello<br>
-                        Fimga<br>
-                        Postman<br>
-                        Git/Github<br>
-                        VSCode<br>
-                        IntelliJ<br>
-                        Adobe Photoshop<br>
-                        Adobe InDesign<br>
-                        Adobe Illustrator<br>
-                        Mirosoft Office<br></p>
-                </section>
-
-                <section class="project" id="Projects">
-                    <h1>My Projects</h1><br>
-                    <h3>Frontend</h3>
-                    <ul>
-                        <p>Project 1: Personal Portfolio</p>
-                        <p>Project 2: To-Do List Application</p>
-                        <p>Project 3: Event Countdown Timer</p>
-                        <p>Project 4: Interactive Quiz App</p>
-                        <p>Project 5: Weather App</p>
-                    </ul><br><br><br><br>
-            
-                
-                    <h3>Full-Stack</h3>
-                    <ul>
-                        <p>Project 6: Reciepe Book</p>
-                        <p>Project 7: NFL/NBA Stats App</p>
-                    </ul>    
-                        <a href="project_desc.html" class="button">View Projects</a>
+                            Trello<br>
+                            Figma<br> 
+                            Postman<br>
+                            Git/GitHub<br>
+                            VSCode<br>
+                            IntelliJ<br>
+                            Adobe Photoshop<br>
+                            Adobe InDesign<br>
+                            Adobe Illustrator<br>
+                            Microsoft Office<br> 
+                        </p>
+                    </div>
                 </section>
             </div>
+            
+            <hr class="my-divider">
 
+            <h1>My Current Projects</h1>
+
+            <div class="forth_row d-flex flex-row justify-content-around">
+                <section class="projects">
+                    <div class="project-card">
+                        <img src="personal_portfolio.png" alt="Project 1 Thumbnail">
+                        <h5>Personal Portifolio</h3>
+                        <a class="button" href="personal_portfolio_website.html">view details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="to-do-list.png" alt="Project 2 Thumbnail">
+                        <h5>To-Do List App</h3>
+                        <a class="button" href="to-do-list-app.html">view details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="event_countdown.png" alt="Project 1 Thumbnail">
+                        <h5>Event Countdown Timer</h3>
+                        <a class="button" href="event_countdown_app.html">view details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="quiz_game.png" alt="Project 2 Thumbnail">
+                        <h5>Quiz Game</h3>
+                        <a class="button" href="quiz_game_app.html">view details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="weather_app.png" alt="Project 1 Thumbnail">
+                        <h5>Weather App</h3>
+                        <a class="button" href="weather_app.html">view details</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="recipe_book.png" alt="Project 2 Thumbnail">
+                        <h5>Recipe Book</h3>
+                        <a class="button" href="recipe_book.html">view details</a>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <footer class="d-flex align-items-center justify-content-center p-3 mb-5">

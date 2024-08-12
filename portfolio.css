@@ -89,14 +89,7 @@ footer a:hover, footer a:hover i {
 
 .my_skills p, 
 .my_skills h3 {
-    text-align: left;
-    margin-left: 50px;
-}
-
-.projects p, 
-.projects h1, 
-.projects h3 {
-    text-align: left;
+    text-align: center;
 }
 
 .portfolio_purpose_paragraph,
@@ -111,34 +104,61 @@ footer a:hover, footer a:hover i {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.third_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
 
-/* Project Style */
-.project, .my_skills {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+.my_skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%; 
+    max-width: 1000px;
 }
 
-.project h3, .project h4{
-    color: #333;
-    text-align: left;
+.my_skills > div {
+    flex: 1; 
+    padding: 0 20px; 
 }
 
-.project p {
-    margin-bottom: 5px;
+/* Project card styles */ 
+.projects {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;  
+    width: 100%;
+    padding: 20px; 
 }
 
-.project ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.project-card h5 {
+    text-align: center;
+}
+.project-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%; 
+    border: 2px solid #ddd;
+    height: auto; 
 }
 
 /* Button Styles */
 .button {
     padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin: 10px auto;  
     font-size: 16px;
     color: #fff;
     background-color: #E22728;
@@ -146,8 +166,10 @@ footer a:hover, footer a:hover i {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    width: 25%; 
+    display: block;  
+    width: auto;  
 }
+
 
 .button:hover {
     background-color: #be1616;

@@ -1,5 +1,7 @@
 body {
     background-color: #F8F4DE;
+    padding: 0; 
+    margin: 0; 
 }
 /* Header Styles */
 header {
