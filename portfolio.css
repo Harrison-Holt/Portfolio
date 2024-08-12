@@ -24,6 +24,13 @@ p {
     max-width: 90ch;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 600px; /* Constrain the height */
+}
+
 /* Header Styles */
 header {
     background-color: #70BEBC;
