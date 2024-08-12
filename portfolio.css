@@ -26,13 +26,12 @@ p {
 
 img {
     max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
-    height: 1000px; 
-    object-fit: cover; 
-    overflow: hidden;
-    position: relative
+    max-height: 600px; /* Adjust this as necessary */
 }
+
 
 /* Header Styles */
 header {
@@ -196,13 +195,16 @@ footer a:hover, footer a:hover i {
 
 /* Iframe Styles */
 iframe {
-    width: 50%; 
-    height: 750px; 
-    border: none; 
-    overflow: hidden;
-    position: relative
+    width: 100%;
+    max-width: 1250px;
+    height: 1000px;
+    border: none;
 }
 
+   .content {
+            height: 1500px; /* Ensure there's enough content to scroll */
+            padding: 20px;
+        }
 
 
 
