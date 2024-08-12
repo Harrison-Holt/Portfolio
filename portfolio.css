@@ -152,7 +152,8 @@ footer a:hover, footer a:hover i {
 .project-card img {
     width: 100%; 
     border: 2px solid #ddd;
-    height: auto; 
+    height: 320px; 
+    object-fit: cover;
 }
 
 /* Button Styles */
