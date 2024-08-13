@@ -48,6 +48,7 @@ header h1 {
 /* Footer Styles */
 footer {
     background-color: #70BEBC;
+    color: #000; 
 }
 
 footer a {
