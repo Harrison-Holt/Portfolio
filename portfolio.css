@@ -9,7 +9,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size: 36px; 
+    font-size: 42px; 
 }
 
 h3 {
@@ -35,7 +35,7 @@ header {
 }
 header a {
     text-decoration: none; 
-    font-size: 24px; 
+    font-size: 36px; 
     color: black; 
 }
 
@@ -55,7 +55,7 @@ footer {
 
 footer a {
     text-decoration: none; 
-    font-size: 36px;
+    font-size: 42px;
     color: inherit; 
     margin: 15px
 }
@@ -65,7 +65,7 @@ footer h1 {
 }
 
 footer i {
-    font-size: 36px; 
+    font-size: 42px; 
 }
 footer a:hover, footer a:hover i {
     transform: scale(1.1); 
