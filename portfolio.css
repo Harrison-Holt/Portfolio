@@ -9,7 +9,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size: 36px; 
+    font-size: 48px; 
 }
 
 h3 {
@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'Cardo';
     padding: 25px;
     line-height: 150%;
@@ -31,7 +31,6 @@ header {
     background-color: #70BEBC;
     top: 0; 
     position: sticky;
-    z-index: 10000;
 }
 header a {
     text-decoration: none; 
@@ -44,8 +43,6 @@ header a:hover {
 }
 header h1 {
     font-size: 36px;
-    padding: 0;
-    list-style: none; 
 }
 
 /* Footer Styles */
@@ -55,18 +52,16 @@ footer {
 
 footer a {
     text-decoration: none; 
-    color: inherit; 
     font-size: 36px;
     margin: 15px
 }
 
 footer h1 {
     margin-right: 20px;
-    font-size: 36px; 
 }
 
 footer i {
-    font-size: 36px; 
+    font-size: 48px; 
 }
 footer a:hover, footer a:hover i {
     transform: scale(1.1); 
