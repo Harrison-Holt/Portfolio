@@ -28,6 +28,7 @@ p {
 
 /* Header Styles */
 header {
+    font-family: 'Merriweather'; 
     background-color: #70BEBC;
     top: 0; 
     position: sticky;
@@ -47,6 +48,7 @@ header h1 {
 
 /* Footer Styles */
 footer {
+    font-family: 'Merriweather'; 
     background-color: #70BEBC;
     color: #000; 
 }
