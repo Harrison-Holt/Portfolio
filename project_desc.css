@@ -3,6 +3,10 @@ body {
     padding: 0; 
     margin: 0; 
 }
+
+h1 {
+    font-family: 'Merriweather'; 
+}
 /* Header Styles */
 header {
     background-color: #70BEBC;
@@ -30,12 +34,13 @@ footer {
 footer a {
     text-decoration: none; 
     color: inherit; 
-    font-size: 32px;
+    font-size: 42px;
     margin: 15px
 }
 
 footer h1 {
     margin-right: 20px;
+    font-size: 42px; 
 }
 
 footer a:hover, footer a:hover i {
@@ -43,7 +48,7 @@ footer a:hover, footer a:hover i {
     text-decoration: none;
     display: inline-block; 
     transition: background-color 0.3s;
-    color: #C81E40;
+    color: #fff;
 }
 #first_project, #second_project, #third_project, 
 #forth_project, #fifth_project, #sixth_project, 
