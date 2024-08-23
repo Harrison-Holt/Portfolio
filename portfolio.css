@@ -145,10 +145,13 @@ footer a:hover, footer a:hover i {
     font-size: 24px; 
 }
 .project-card {
+    display: flex; 
     background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     overflow: hidden;
+    min-height: 30vh;
+    flex: 1; 
     align-items: center;
     transition: transform 0.2s;
 }
