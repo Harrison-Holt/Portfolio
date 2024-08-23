@@ -58,6 +58,7 @@ footer a:hover, footer a:hover i {
     margin: 20px auto;  
     padding: 20px;
     background: #fff;
+    min-height: 100vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .media-row {
