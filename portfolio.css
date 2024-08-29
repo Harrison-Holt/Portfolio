@@ -1,79 +1,90 @@
 /* Body and Global Styles */
 body {
     background-color: #F8F4DE;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    box-sizing: border-box; /* Ensures consistent padding and border calculations */
 }
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Merriweather';
+}
+
+h1 {
+    font-size: 48px; 
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Cardo';
+    padding: 25px;
+    line-height: 150%;
+    max-width: 90ch;
+}
+
+
 
 /* Header Styles */
 header {
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather'; 
     background-color: #70BEBC;
     position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
-
 header a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    margin: 5px;
+    text-decoration: none; 
+    font-size: 36px; 
+    color: black; 
 }
 
 header a:hover {
-    color: white;
+    color: white; 
+}
+header h1 {
+    font-size: 36px;
 }
 
 /* Footer Styles */
 footer {
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather'; 
     background-color: #70BEBC;
-    color: #000;
-    text-align: center;
-    padding: 15px 0;
+    color: #000; 
 }
 
 footer a {
-    text-decoration: none;
-    font-size: 16px;
-    color: inherit;
-    margin: 5px;
+    text-decoration: none; 
+    font-size: 42px;
+    color: inherit; 
+    margin: 15px
+}
+
+footer h1 {
+    margin-right: 20px;
 }
 
 footer i {
-    font-size: 20px;
+    font-size: 42px; 
 }
-
 footer a:hover, footer a:hover i {
-    transform: scale(1.1);
+    transform: scale(1.1); 
     text-decoration: none;
-    transition: color 0.3s;
+    display: inline-block; 
+    transition: background-color 0.3s;
     color: #fff;
 }
 
-/* Section Styles */
+/* Specific Sections Styles */
 .portfolio_purpose,
 .my_journey,
 .my_skills,
 .projects {
-    width: 100%;
-    padding: 10px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    width: 50%; 
 }
 
 .projects {
-    display: flex;
+    display: flex; 
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -90,65 +101,61 @@ footer a:hover, footer a:hover i {
 
 .portfolio_purpose_paragraph,
 .project_description {
-    padding: 10px;
+    padding: 30px;
     border: 2px solid black;
-    margin: 10px 0;
 }
 
 .my-divider {
     height: 5px;
     background-color: black;
-    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 .third_row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .my_skills {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1000px;
 }
 
 .my_skills > div {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+    flex: 1; 
+    padding: 0 20px; 
 }
 
-/* Project Card Styles */
+/* Project card styles */ 
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;  
     width: 100%;
-    padding: 10px;
+    padding: 20px; 
 }
-
 .project_heading {
-    margin-top: 20px;
+    margin-top: 500px; 
 }
-
 .project-card h5 {
     text-align: center;
-    font-size: 18px;
+    font-size: 24px; 
 }
-
 .project-card {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     background-color: #f8f8f8;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     overflow: hidden;
-    width: 90%;
-    margin: 10px 0;
+    min-height: 30vh;
+    flex: 1; 
+    align-items: center;
     transition: transform 0.2s;
 }
 
@@ -157,27 +164,28 @@ footer a:hover, footer a:hover i {
 }
 
 .project-card img {
-    width: 100%;
+    width: 100%; 
     border: 2px solid #ddd;
-    height: auto;
+    height: 320px; 
     object-fit: cover;
 }
 
 /* Button Styles */
 .button {
-    padding: 12px 20px;
-    margin: 15px auto;
+    padding: 10px 20px;
+    margin: 10px auto;  
     font-size: 16px;
     color: #fff;
     background-color: #E22728;
     text-align: center;
     text-decoration: none;
+    font-size: 18px; 
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    display: block;
-    width: 90%;
-    max-width: 300px;
+    display: block;  
+    width: 50%;  
 }
+
 
 .button:hover {
     background-color: #be1616;
@@ -185,127 +193,9 @@ footer a:hover, footer a:hover i {
 
 /* Iframe Styles */
 iframe {
-    width: 100%;
+    width: 50%;
     height: auto;
     border: none;
-}
-
-/* Media Queries for Mobile Responsiveness */
-
-/* For small devices (phones, up to 480px) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    header {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    header a {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 10px 0;
-    }
-
-    footer a {
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    .portfolio_purpose,
-    .my_journey,
-    .my_skills,
-    .projects {
-        padding: 5px;
-    }
-
-    .projects {
-        width: 100%;
-        padding: 5px;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .button {
-        width: 100%;
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-/* For medium devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    .portfolio_purpose,
-    .my_journey,
-    .my_skills,
-    .projects {
-        width: 90%;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .my_skills {
-        flex-direction: column;
-    }
-
-    .button {
-        width: 70%;
-    }
-}
-
-/* For large devices (small laptops, up to 1024px) */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 44px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    .my_skills {
-        flex-direction: row;
-    }
-
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .button {
-        width: 60%;
-    }
 }
 
 
