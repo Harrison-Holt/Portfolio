@@ -1,42 +1,52 @@
 /* Body and Global Styles */
 body {
     background-color: #F8F4DE;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
 h1, h3 {
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
     font-size: 48px; 
+    margin: 10px 0;
 }
 
 h3 {
     font-size: 24px;
+    margin: 5px 0;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Cardo';
-    padding: 25px;
-    line-height: 150%;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    padding: 20px;
+    line-height: 1.6;
     max-width: 90ch;
+    margin: 0 auto;
 }
 
 /* Header Styles */
 header {
-    font-family: 'Merriweather'; 
+    font-family: 'Merriweather', serif; 
     background-color: #70BEBC;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 header a {
     text-decoration: none; 
-    font-size: 36px; 
+    font-size: 24px; 
     color: black; 
 }
 
@@ -44,37 +54,31 @@ header a:hover {
     color: white; 
 }
 
-header h1 {
-    font-size: 36px;
-}
-
 /* Footer Styles */
 footer {
-    font-family: 'Merriweather'; 
+    font-family: 'Merriweather', serif; 
     background-color: #70BEBC;
     color: #000; 
+    text-align: center;
+    padding: 15px 0;
 }
 
 footer a {
     text-decoration: none; 
-    font-size: 42px;
+    font-size: 18px;
     color: inherit; 
-    margin: 15px;
-}
-
-footer h1 {
-    margin-right: 20px;
+    margin: 10px;
 }
 
 footer i {
-    font-size: 42px; 
+    font-size: 24px; 
 }
 
 footer a:hover, footer a:hover i {
     transform: scale(1.1); 
     text-decoration: none;
     display: inline-block; 
-    transition: background-color 0.3s;
+    transition: color 0.3s;
     color: #fff;
 }
 
@@ -83,7 +87,10 @@ footer a:hover, footer a:hover i {
 .my_journey,
 .my_skills,
 .projects {
-    width: 50%; 
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .projects {
@@ -105,15 +112,15 @@ footer a:hover, footer a:hover i {
 
 .portfolio_purpose_paragraph,
 .project_description {
-    padding: 30px;
+    padding: 20px;
     border: 2px solid black;
+    margin: 10px 0;
 }
 
 .my-divider {
     height: 5px;
     background-color: black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .third_row {
@@ -126,32 +133,34 @@ footer a:hover, footer a:hover i {
 .my_skills {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%; 
     max-width: 1000px;
 }
 
 .my_skills > div {
-    flex: 1; 
-    padding: 0 20px; 
+    flex: 1 1 100%;
+    padding: 10px 20px; 
+    box-sizing: border-box;
 }
 
 /* Project Card Styles */
 .projects {
     display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;  
     width: 100%;
-    padding: 20px; 
+    padding: 10px; 
 }
 
 .project_heading {
-    margin-top: 500px; 
+    margin-top: 20px; 
 }
 
 .project-card h5 {
     text-align: center;
-    font-size: 24px; 
+    font-size: 20px; 
 }
 
 .project-card {
@@ -174,7 +183,7 @@ footer a:hover, footer a:hover i {
 .project-card img {
     width: 100%; 
     border: 2px solid #ddd;
-    height: 320px; 
+    height: 200px; 
     object-fit: cover;
 }
 
@@ -182,7 +191,7 @@ footer a:hover, footer a:hover i {
 .button {
     padding: 10px 20px;
     margin: 10px auto;  
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     background-color: #E22728;
     text-align: center;
@@ -190,7 +199,7 @@ footer a:hover, footer a:hover i {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     display: block;  
-    width: 50%;  
+    width: 80%;  
 }
 
 .button:hover {
@@ -199,46 +208,54 @@ footer a:hover, footer a:hover i {
 
 /* Iframe Styles */
 iframe {
-    width: 50%;
+    width: 100%;
     height: auto;
     border: none;
 }
 
+/* Media Queries for Improved Mobile Responsiveness */
 
 /* For small devices (phones, up to 480px) */
 @media (max-width: 480px) {
-    body {
-        font-size: 14px;
-        padding: 10px;
-    }
-
     h1 {
-        font-size: 32px;
+        font-size: 28px;
+        margin: 10px 0;
     }
 
     h3 {
         font-size: 18px;
+        margin: 5px 0;
     }
 
     p {
         font-size: 16px;
-        padding: 15px;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
     header a {
-        font-size: 24px;
+        font-size: 20px;
+        margin: 5px 0;
     }
 
     footer a {
-        font-size: 28px;
+        font-size: 16px;
     }
 
     .portfolio_purpose,
     .my_journey,
     .my_skills,
     .projects {
-        width: 100%;
-        padding: 10px;
+        padding: 5px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .my_skills {
@@ -246,16 +263,12 @@ iframe {
     }
 
     .my_skills > div {
-        padding: 10px 0;
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
+        padding: 5px 0;
     }
 
     .button {
-        width: 80%;
-        font-size: 16px;
+        width: 90%;
+        font-size: 14px;
     }
 
     iframe {
