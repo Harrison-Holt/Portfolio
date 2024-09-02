@@ -17,38 +17,38 @@ This page serves as the home page for my portfolio website.
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="portfolio.css">
     </head>
-    <body class="d-flex flex-column vh-100">
-        <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
-            <h1 class="m-0">Harrison Holt</h1>
+    <body class="container-fluid min-vh-100">
+        <header class="row shadow-lg mb-3 p-3">
+            <h1 class="col-12 m-0">Harrison Holt</h1>
         </header>
 
+        <main class="container-fluid min-vh-100">
 
-        <main>
-
-            <!--The first row-->
-
-            <div class="first_row d-flex flex-row justify-content-around">
-                <section class="portfolio_purpose p-3 md-5">
-                    <div class="portfolio_purpose_paragraph">
-                    <h1>My Mission and Vision</h1>
-                    <p>Welcome to my digital portfolio, a curated collection of my professional journey, projects, and the skills I've honed along the way. 
-                        This portfolio is more than just a showcase of past work; 
-                        it's a reflection of my dedication to continuous learning and improvement, my passion for creative problem-solving, and my commitment to excellence.
-                         Whether you're a potential employer, a collaborator, or a fellow enthusiast in the field, here you will find a transparent window into the quality and depth of my craft. 
-                         From detailed case studies that explore my approach to tackling complex challenges to snippets of my day-to-day learning, this portfolio is designed to not only display 
-                         what I have accomplished but also to ignite conversations about future possibilities. 
-                         It is an invitation to connect, explore, and embark on new ventures that push the boundaries of what we can achieve together.</p>
-                    </div>
+            <div class="row">
+                <section class="col-12 col-md-6 d-flex flex-column align-items-center mt-5">
+                <h1>My Mission and Vision</h1>
+                <p>Welcome to my digital portfolio, a curated collection of my professional journey, projects, and the skills I've honed along the way. 
+                    This portfolio is more than just a showcase of past work; 
+                    it's a reflection of my dedication to continuous learning and improvement, my passion for creative problem-solving, and my commitment to excellence.
+                     Whether you're a potential employer, a collaborator, or a fellow enthusiast in the field, here you will find a transparent window into the quality and depth of my craft. 
+                     From detailed case studies that explore my approach to tackling complex challenges to snippets of my day-to-day learning, this portfolio is designed to not only display 
+                     what I have accomplished but also to ignite conversations about future possibilities. 
+                     It is an invitation to connect, explore, and embark on new ventures that push the boundaries of what we can achieve together.</p>
                 </section>
 
-                <img src="me.jpg" alt="pic of me" width="600px" height="auto">
+            <section class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img src="me.jpg" alt="pic of me" class="img-fluid">
+            </section>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="my-divider">
             </div>
+        </div>
 
-            <hr class="my-divider">
-            <!--The second row-->
-
-            <div class="second_row d-flex flex-row justify-content-around">
-                <section class="my_journey p-5 md-5" id="About_me">
+       <div class="row">
+        <section class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center " id="About_me">
                     <h1>My Journey</h1>
                     <p>  My name is Harrison Holt, and as a senior Computer Science major 
                         with a minor in Psychology, 
@@ -88,19 +88,24 @@ This page serves as the home page for my portfolio website.
                         while continuously seeking personal and professional development.</p>
                 </section>
                 
-                <iframe src="Resume.pdf" id="Resume" aria-label="Resume PDF"><p>Your browser does not support iframes. Please <a href="Resume.pdf" target="_blank">click here</a> to download the resume.</p></iframe>
+                <section class="col-12 col-md-6 d-flex justify-content-center align-items-stretch mt-5">
+                    <div class="w-100" style="height: 800px;"> 
+                        <iframe src="Resume.pdf" id="Resume" class="w-100 h-100 border-0" aria-label="Resume PDF" allowfullscreen></iframe>
+                    </div>
+                </section>
 
             </div>
-            
-            <hr class="my-divider">
 
-            <!--The third row-->
-            <div class="third_row">
-                <h1>My Skills</h1>
-                <section class="my_skills">
-                    <div class="d-flex flex-column">
-                        <h3>Current Languages:</h3>
-                        <p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="my-divider">
+                </div>
+            </div>
+
+            <div class="row">
+                <section class="col-6 my_skills d-flex flex-column align-items-center mt-5">
+                    <h3>Current Languages:</h3>
+                        <p class="text-center">
                             C++<br>
                             C<br>
                             Python<br>
@@ -110,9 +115,10 @@ This page serves as the home page for my portfolio website.
                             HTML/CSS<br>
                             MySQL<br>
                         </p>
-                    </div>
+                    </section>
+
             
-                    <div class="d-flex flex-column">
+                    <section class="col-6 my_skills d-flex flex-column align-items-center mt-5">
                         <h3>Current Software:</h3>
                         <p>
                             Trello<br>
@@ -126,72 +132,77 @@ This page serves as the home page for my portfolio website.
                             Adobe Illustrator<br>
                             Microsoft Office<br> 
                         </p>
-                    </div>
-                </section>
+                    </section>
             </div>
 
-
-            <hr class="my-divider">
-
-            <h1>My Personal Projects</h1>
-
-
-            <div class="forth_row d-flex flex-row justify-content-around">
-                <section class="projects">
-                    <div class="project-card">
-                        <img src="personal_portfolio.png" alt="Project 1 Thumbnail">
-                        <h5>Personal Portifolio</h5>
-                        <a class="button" href="personal_portfolio_website.html">view details</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="to-do-list.png" alt="Project 2 Thumbnail">
-                        <h5>To-Do List App</h3>
-                        <a class="button" href="to-do-list-app.html">view details</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="event_countdown.png" alt="Project 3 Thumbnail">
-                        <h5>Event Countdown Timer</h3>
-                        <a class="button" href="event_countdown_app.html">view details</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="quiz_game.png" alt="Project 4 Thumbnail">
-                        <h5>Quiz Game</h3>
-                        <a class="button" href="quiz_game_app.html">view details</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="weather_app.png" alt="Project 5 Thumbnail">
-                        <h5>Weather App</h3>
-                        <a class="button" href="weather_app.html">view details</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="recipe_book.png" alt="Project 6 Thumbnail">
-                        <h5>Recipe Book</h3>
-                        <a class="button" href="recipe_book.html">view details</a>
-                    </div>
-                </section>
+            <div class="row">
+                <div class="col-12">
+                    <div class="my-divider">
+                </div>
             </div>
 
-            <h1 class="project_heading">My Academic Projects</h1>
+            <div class="row mt-5">
+                <h1>My Personal Projects</h1>
 
-            <div class="forth_row d-flex flex-row justify-content-around">
-                <section class="projects">
-                    <div class="project-card">
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="personal_portfolio.png" alt="Personal Portfolio Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">Personal Portfolio</h5>
+                    <a class="btn btn-primary mt-2" href="personal_portfolio_website.html">View Details</a>
+                </div>
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="to-do-list.png" alt="To-Do List App Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">To-Do List App</h5>
+                    <a class="btn btn-primary mt-2" href="to-do-list-app.html">View Details</a>
+                </div>
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="event_countdown.png" alt="Event Countdown Timer Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">Event Countdown Timer</h5>
+                    <a class="btn btn-primary mt-2" href="event_countdown_app.html">View Details</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="quiz_game.png" alt="Quiz Game Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">Quiz Game</h5>
+                    <a class="btn btn-primary mt-2" href="quiz_game_app.html">View Details</a>
+                </div>
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="weather_app.png" alt="Weather App Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">Weather App</h5>
+                    <a class="btn btn-primary mt-2" href="weather_app.html">View Details</a>
+                </div>
+                <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
+                    <img src="recipe_book.png" alt="Recipe Book Thumbnail" class="img-fluid">
+                    <h5 class="mt-3">Recipe Book</h5>
+                    <a class="btn btn-primary mt-2" href="recipe_book.html">View Details</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="my-divider">
+                </div>
+            </div>
+
+                <section class="row m-5">
+                    <h1>My Academic Projects</h1>
+
+                    <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
                         <h5>Full Functional Website</h5>
-                        <a class="button" href="senior_computing_practicum.html">view details</a>
+                        <a class="btn btn-primary mt-2" href="senior_computing_practicum.html">view details</a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
                         <h5>Accessible Kiosk Design</h5>
-                        <a class="button" href="inclusive_design.html">view details</a>
+                        <a class="btn btn-primary mt-2" href="inclusive_design.html">view details</a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-3 m-2">
                         <h5>HCI Redesign Task</h5>
-                        <a class="button" href="hci.html">view details</a>
+                        <a class="btn btn-primary mt-2" href="hci.html">view details</a>
                     </div>
                 </section>
-            </div>
         </main>
-
-        <footer class="d-flex align-items-center justify-content-center p-3 mb-5">
+        <footer class="row">
+            <div class="col-12 d-flex flex-row justify-content-center align-items-center">
             <h1>Let's Connect!</h1>
             <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
                 <i class="fab fa-github"></i>
@@ -202,6 +213,9 @@ This page serves as the home page for my portfolio website.
             <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
                 <i class="fa fa-envelope"></i>
             </a>
+            </div>
         </footer>
+    </body>
+</html>
     </body>
 </html>

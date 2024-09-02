@@ -37,7 +37,6 @@ header a {
     font-size: 36px; 
     color: black; 
 }
-
 header a:hover {
     color: white; 
 }
@@ -111,25 +110,6 @@ footer a:hover, footer a:hover i {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.third_row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.my_skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; 
-    max-width: 1000px;
-}
-
-.my_skills > div {
-    flex: 1; 
-    padding: 0 20px; 
-}
 
 /* Project card styles */ 
 .projects {
@@ -193,10 +173,7 @@ footer a:hover, footer a:hover i {
 
 /* Iframe Styles */
 iframe {
-    width: 50%;
-    height: auto;
-    border: none;
+   height: 500px; 
 }
-
 
 
