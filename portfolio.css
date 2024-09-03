@@ -127,15 +127,12 @@ footer a:hover, footer a:hover i {
     font-size: 24px; 
 }
 .project-card {
-    display: flex; 
-    flex-direction: column;
     background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     overflow: hidden;
-    min-height: 30vh;
+    min-height: 300px;    
     flex: 1; 
-    align-items: center;
     transition: transform 0.2s;
 }
 
@@ -148,6 +145,7 @@ footer a:hover, footer a:hover i {
     border: 2px solid #ddd;
     height: 320px; 
     object-fit: cover;
+    max-height: 150px;
 }
 
 /* Button Styles */
