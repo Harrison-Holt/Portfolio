@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Cardo';
     padding: 25px;
     line-height: 150%;
@@ -175,4 +175,6 @@ iframe {
    height: 500px; 
 }
 
-
+.lightbulb-icon  {
+    color: #FFD700;
+}
