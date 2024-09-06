@@ -25,5 +25,20 @@
     color: #28a745; 
 }
 .demo-icon {
-    color: #dc3545
+    color: #dc3545; 
+}
+.server-icon {
+    color: #6f42c1; 
+}
+.my-divider {
+    height: 5px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+body {
+    font-family: 'Cardo', serif;
+}
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
 }
