@@ -1,81 +1,105 @@
 <!DOCTYPE html>
 <html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Harrison Holt's Frontend Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="stylesheet" href="project_desc.css">
-    </head>
-    <body>
-        <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
-            <h1 class="m-0">Harrison Holt</h1>
-            <div class="portfolio_sections">
-                <nav>
-                    <a href="index.html">Home</a>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Holt's Frontend Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="project_desc.css">
+    <link rel="stylesheet" href="senior_computing_practicum.css">
+</head>
+<body>
+    <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
+        <h1 class="m-0">Harrison Holt</h1>
+        <div class="portfolio_sections">
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <section id="sixth_project">
+        <h1>The Good Driver Incentive Program</h1>
+        <p class="mt-5">This Project will be completed in the Course CPSC 4910- Senior Computing Practicum. This project will be completed in a group of 5 members. This page will be updated as we finish each phase/milestone. Stay Tuned for updates!</p>
+
+        <h3 class="mt-5">Project Timeline</h3>
+        <ul>
+            <li><strong>Weeks 1-3:</strong> Team Selection, Project Planning & Development Setup</li>
+            <li><strong>Weeks 4-15:</strong> Work in a team environment with minimal supervision. Plan, Code & Test using Agile Project Management</li>
+            <li><strong>Weeks 16-17:</strong> Final Project Presentations</li>
+        </ul>
+
+        <section id="current_phase" class="mt-5">
+            <h3>Current Phase</h3>
+            <p>We are currently in the planning phase, developing 350 user stories and the release plan, due on Monday, September 9, 2024. This section will be updated as we progress through each milestone.</p>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
             </div>
-        </header>
-        <section id="sixth_project">
-            <h1>The Good Driver Incentive Program</h1>
-                <p class="mt-5">This Project will be completed in the Course CPSC 4910- Senior Computing Practicum. This project will be completed in a group of 5 members. This page will be updated as we finish each pharse/milestone. 
-                    Stay Tuned for updates! </p>
-                    
-            <h3 class="mt-5">Project Timeline</h3>
-                <ul>
-                    <li><strong>Weeks 1-3:</strong> Team Selection, Project Planning & Development Setup</li>
-                    <li><strong>Weeks 4-15:</strong> Work in a team environment with minimal supervision. Plan, Code & Test using Agile Project Management</li>
-                    <li><strong>Weeks 16-17:</strong> Final Project Presentations</li>
-                </ul>
+            <p>Progress: Week 2 of 17</p>
+        </section>
 
-                <section id="current_phase" class="mt-5">
-                    <h3>Current Phase</h3>
-                    <p>We are currently in the planning phase, developing 350 user stories and the release plan, due on Monday September 9, 2024. This section will be updated as we progress through each milestone.</p>
-                </section>
+        <section id="release_plan" class="mt-5">
+            <h3>Release Plan</h3>
+            <p>The release plan will be available here after it's finalized on Tuesday, September 10, 2024. Stay tuned for updates!</p>
+            <!--
+            <iframe src="" width="100%" height="500px" style="border: none;">
+                Your browser does not support iframes.
+            </iframe>
+            -->
+        </section>
 
-                <section class="project_description mt-5" class="mt-5">
-                    <h3>Project Description</h3>
-                    <p class="mt-2">
-                        The Good Driver Incentive Program is a web application that encourages better driving behaviors among truck drivers by awarding points for positive actions. These points can be redeemed for products in a sponsor-managed catalog. 
-                    </p>
-                    <p>
-                        **Drivers** can log in to the system, view and update their profiles, track their points, and browse their sponsor's catalog to redeem points for rewards. They can also view the status of their purchases and manage their orders.
-                    </p>
-                    <p>
-                        **Sponsor Users** oversee the drivers and manage the incentive programs. They can log in to review and update their own profiles, manage driver applications, approve or reject drivers, and adjust points based on driver performance. They also manage the product catalog by integrating with APIs for up-to-date product information, including prices and availability. Sponsors can assume the role of a driver to see the system from the driver's perspective, ensuring the program runs smoothly.
-                    </p>
-                    <p>
-                        **Admin Users** have the highest level of control, managing both sponsor and driver accounts. They can review and update profiles for all user types, handle security aspects like password resets, and monitor significant system events through audit logs. Admins ensure the overall integrity and security of the system by managing access, handling escalations, and generating detailed reports that track points, purchases, and system usage across all users.
-                    </p>
-                </section>
+        <section class="project_description mt-5">
+            <h3>Project Description</h3>
+            <p class="mt-2">
+                The Good Driver Incentive Program is a web application that encourages better driving behaviors among truck drivers by awarding points for positive actions. These points can be redeemed for products in a sponsor-managed catalog. 
+            </p>
+            <p>
+                <strong>Drivers:</strong> can log in to the system, view and update their profiles, track their points, and browse their sponsor's catalog to redeem points for rewards. They can also view the status of their purchases and manage their orders.
+            </p>
+            <p>
+                <strong>Sponsor Users:</strong> oversee the drivers and manage the incentive programs. They can log in to review and update their own profiles, manage driver applications, approve or reject drivers, and adjust points based on driver performance. They also manage the product catalog by integrating with APIs for up-to-date product information, including prices and availability. Sponsors can assume the role of a driver to see the system from the driver's perspective, ensuring the program runs smoothly.
+            </p>
+            <p>
+                <strong>Admin Users:</strong> have the highest level of control, managing both sponsor and driver accounts. They can review and update profiles for all user types, handle security aspects like password resets, and monitor significant system events through audit logs. Admins ensure the overall integrity and security of the system by managing access, handling escalations, and generating detailed reports that track points, purchases, and system usage across all users.
+            </p>
+        </section>
 
-                <section class="tech_stack mt-5">
-                    <h3>Technology Stack</h3>
-                    <ul>
-                        <li><strong>Hosting:</strong> AWS Amplify</li>
-                        <li><strong>Database:</strong> AWS RDS with MySQL</li>
-                        <li><strong>Back-End:</strong> Node.js</li>
-                        <li><strong>Front-End:</strong> React and Bootstrap</li>
-                        <li><strong>Version Control:</strong> Git</li>
-                        <li><strong>Project Management:</strong> Azure DevOps</li>
-                    </ul>
-                </section>
-                
-                
+        <section class="tech_stack mt-5">
+            <h3>Technology Stack</h3>
+            <ul>
+                <li><strong>Hosting:</strong> AWS Amplify</li>
+                <li><strong>Database:</strong> AWS RDS with MySQL</li>
+                <li><strong>Back-End:</strong> Node.js</li>
+                <li><strong>Front-End:</strong> React and Bootstrap</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Project Management:</strong> Azure DevOps</li>
+            </ul>
+        </section>
+
+        <section id="user_stories" class="mt-5">
+            <h3>User Stories</h3>
+            <p>The user stories will be added here once they are completed. Check back soon!</p>
+            <!--
+            <iframe src="" width="100%" height="500px" style="border: none;">
+                Your browser does not support iframes.
+            </iframe>
+            -->
         </section>
         
-        <footer class="d-flex align-items-center justify-content-center">
-            <h1>Let's Connect!</h1>
-            <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/harrison-holt-18a703202" aria-label="Visit Harrison's LinkedIn profile" title="Visit Harrison's LinkedIn profile">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
-                <i class="fa fa-envelope"></i>
-            </a>
-        </footer>
-    </body>
+    </section>
+
+    <footer class="d-flex align-items-center justify-content-center">
+        <h1>Let's Connect!</h1>
+        <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harrison-holt-18a703202" aria-label="Visit Harrison's LinkedIn profile" title="Visit Harrison's LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
+            <i class="fa fa-envelope"></i>
+        </a>
+    </footer>
+</body>
 </html>
+
