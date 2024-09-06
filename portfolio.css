@@ -133,7 +133,6 @@ footer a:hover, footer a:hover i {
     overflow: hidden;
     min-height: 300px;    
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     transition: transform 0.2s;
 }
