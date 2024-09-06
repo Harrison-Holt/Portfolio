@@ -18,3 +18,12 @@
     width: 12%; /* (2 weeks / 17 total weeks) */
     transition: width 0.3s ease;
 }
+.planning-icon {
+    color: #007bff;
+}
+.coding-icon {
+    color: #28a745; 
+}
+.demo-icon {
+    color: #dc3545
+}
