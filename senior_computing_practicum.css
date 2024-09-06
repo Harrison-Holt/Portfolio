@@ -19,7 +19,7 @@
     transition: width 0.3s ease;
 }
 .planning-icon {
-    color: #007bff;
+    color: #fd7e14;
 }
 .coding-icon {
     color: #28a745; 
@@ -29,6 +29,9 @@
 }
 .server-icon {
     color: #6f42c1; 
+}
+.accessibility-icon {
+    color: #007bff; 
 }
 .my-divider {
     height: 5px;
