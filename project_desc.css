@@ -152,23 +152,3 @@ h1, h2, h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.responsive-pdf {
-    width: 100%;
-    height: 100%;
-    border: none;
-    zoom: 0.5; /* Adjust the zoom level to fit the entire PDF */
-}
-
-@media (max-width: 768px) {
-    .responsive-pdf {
-        zoom: 0.4; /* Further scale down for smaller screens */
-    }
-}
-
-@media (max-width: 576px) {
-    .responsive-pdf {
-        zoom: 0.3; /* Even further scaling for very small screens */
-    }
-}
-
