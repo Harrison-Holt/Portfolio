@@ -152,3 +152,20 @@ h1, h2, h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.iframe-fullscreen {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes borders */
+}
+
+.ratio {
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.ratio-16x9 iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transform-origin: top left; /* Scale from the top left corner */
+}
