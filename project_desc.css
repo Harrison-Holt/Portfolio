@@ -153,19 +153,27 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-.iframe-fullscreen {
+.responsive-iframe {
     width: 100%;
     height: 100%;
     border: none; /* Removes borders */
 }
 
-.ratio {
-    overflow: hidden; /* Ensures no overflow */
+@media (max-width: 768px) {
+    .responsive-iframe {
+        transform: scale(0.75); 
+        transform-origin: top left; 
+        width: 133%; 
+        height: 133%; 
+    }
 }
 
-.ratio-16x9 iframe {
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    transform-origin: top left; /* Scale from the top left corner */
+@media (max-width: 576px) {
+    .responsive-iframe {
+        transform: scale(0.5); 
+        transform-origin: top left;
+        width: 200%; 
+        height: 200%; 
+    }
 }
+
