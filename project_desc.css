@@ -153,27 +153,22 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-.responsive-iframe {
+.responsive-pdf {
     width: 100%;
     height: 100%;
-    border: none; /* Removes borders */
+    border: none;
+    zoom: 0.5; /* Adjust the zoom level to fit the entire PDF */
 }
 
 @media (max-width: 768px) {
-    .responsive-iframe {
-        transform: scale(0.75); 
-        transform-origin: top left; 
-        width: 133%; 
-        height: 133%; 
+    .responsive-pdf {
+        zoom: 0.4; /* Further scale down for smaller screens */
     }
 }
 
 @media (max-width: 576px) {
-    .responsive-iframe {
-        transform: scale(0.5); 
-        transform-origin: top left;
-        width: 200%; 
-        height: 200%; 
+    .responsive-pdf {
+        zoom: 0.3; /* Even further scaling for very small screens */
     }
 }
 
