@@ -49,7 +49,7 @@ footer a:hover, footer a:hover i {
 }
 #first_project, #second_project, #third_project, 
 #forth_project, #fifth_project, #sixth_project, 
-#seven_project {
+#seven_project, #web_accessibility_focus {
     max-width: 80%;  
     width: 80%;  
     margin: 20px auto;  

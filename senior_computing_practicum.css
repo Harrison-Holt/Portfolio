@@ -15,7 +15,7 @@
 .progress-bar {
     height: 20px;
     background-color: #007bff;
-    width: 18%; /* (2 weeks / 17 total weeks) */
+    width: 24%; /* (2 weeks / 17 total weeks) */
     transition: width 0.3s ease;
 }
 .planning-icon {
